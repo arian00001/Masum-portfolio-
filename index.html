@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masum Dev — Premium Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader-screen" id="loader">
+    <div class="loader-inner">
+      <span class="loader-mark">M</span>
+      <span class="loader-counter" id="loaderCount">0</span>
+    </div>
+    <div class="loader-bar"><span id="loaderBar"></span></div>
+  </div>
+
+  <div class="scroll-progress"><span id="progressBar"></span></div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo" data-reveal>
+        <span class="logo-mark">M</span><span class="logo-text">MASUM<span>DEV</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="m-link">Home</a>
+    <a href="#about" class="m-link">About</a>
+    <a href="#skills" class="m-link">Skills</a>
+    <a href="#work" class="m-link">Work</a>
+    <a href="#projects" class="m-link">Projects</a>
+    <a href="#contact" class="m-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="particles" aria-hidden="true">
+        <span style="--x:8%;--d:0s;--s:9s"></span>
+        <span style="--x:22%;--d:1.5s;--s:11s"></span>
+        <span style="--x:40%;--d:0.8s;--s:8s"></span>
+        <span style="--x:58%;--d:2.2s;--s:10s"></span>
+        <span style="--x:74%;--d:1s;--s:12s"></span>
+        <span style="--x:90%;--d:3s;--s:9s"></span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-label" data-reveal>
+            <span class="dot"></span> AVAILABLE FOR WORK &middot; 2026
+          </span>
+          <h1 class="hero-title">
+            <span class="line" data-line><span>MASUM</span></span>
+            <span class="line" data-line><span class="serif"><em>Dev.</em></span></span>
+          </h1>
+          <p class="hero-sub" data-reveal>Crafting premium digital experiences through clean code and precise motion design — where engineering meets editorial craft.</p>
+          <div class="hero-cta" data-reveal>
+            <a href="#projects" class="btn btn-primary magnetic"><span>View Work</span><span class="arrow">&rarr;</span></a>
+            <a href="#contact" class="btn btn-ghost magnetic"><span>Get in Touch</span></a>
+          </div>
+          <div class="hero-meta" data-reveal>
+            <div><span class="meta-k">BASED IN</span><span class="meta-v">Dhaka, BD</span></div>
+            <div><span class="meta-k">FOCUS</span><span class="meta-v">Web &middot; Motion</span></div>
+            <div><span class="meta-k">STATUS</span><span class="meta-v live">Available</span></div>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-image-frame">
+            <img src="https://i.ibb.co.com/W4FHt1JR/New-Project-249-7-F53522.png" alt="Masum Dev" class="hero-image" loading="lazy" onerror="this.style.display='none'" />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator"><span></span><span class="scroll-text">SCROLL</span></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee">
+        <span>DEVELOPER</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>EDITOR</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>MOTION DESIGN</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>CREATIVE CODE</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>DEVELOPER</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>EDITOR</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>MOTION DESIGN</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+        <span>CREATIVE CODE</span><svg class="ic star-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="stat-card" data-reveal>
+        <span class="stat-num" data-count="2">0</span>
+        <span class="stat-label">Developer</span>
+      </div>
+      <div class="stat-card" data-reveal>
+        <span class="stat-num" data-count="6">0</span>
+        <span class="stat-label">Editor</span>
+      </div>
+      <div class="stat-card" data-reveal>
+        <span class="stat-num" data-count="120">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Motion Details</span>
+      </div>
+      <div class="stat-card" data-reveal>
+        <span class="stat-num infinity">&infin;</span>
+        <span class="stat-label">Creative</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <span class="section-label" data-reveal>ABOUT</span>
+      <h2 class="section-title" data-reveal>A blend of engineering precision and <em class="serif">creative</em> editing.</h2>
+      <div class="about-grid">
+        <div class="about-card" data-reveal>
+          <div class="about-icon"><svg class="ic ic-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+          <h3>Development</h3>
+          <p>2 years building modern, responsive, performant web interfaces with a focus on motion and detail.</p>
+          <span class="card-num">01</span>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="about-icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+          <h3>Editing</h3>
+          <p>6 years of professional video and visual editing — storytelling through rhythm, color, and pacing.</p>
+          <span class="card-num">02</span>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="about-icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/></svg></div>
+          <h3>Creative</h3>
+          <p>An infinite drive for polish — every pixel and every frame considered with intention.</p>
+          <span class="card-num">03</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <span class="section-label" data-reveal>SKILLS</span>
+      <h2 class="section-title" data-reveal>Tools &amp; <em class="serif">technologies</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-reveal><span class="skill-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span><h4>Frontend</h4><p>HTML, CSS, JavaScript, React</p></div>
+        <div class="skill-card" data-reveal><span class="skill-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/></svg></span><h4>Motion</h4><p>Framer Motion, GSAP, CSS</p></div>
+        <div class="skill-card" data-reveal><span class="skill-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg></span><h4>Editing</h4><p>Premiere Pro, After Effects</p></div>
+        <div class="skill-card" data-reveal><span class="skill-ic"><svg class="ic ic-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span><h4>Tooling</h4><p>Git, Vite, Figma, Node</p></div>
+        <div class="skill-card" data-reveal><span class="skill-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg></span><h4>Design</h4><p>UI/UX, Typography, Layout</p></div>
+        <div class="skill-card" data-reveal><span class="skill-ic"><svg class="ic ic-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><h4>Performance</h4><p>Optimization, Accessibility</p></div>
+      </div>
+    </section>
+
+    <!-- WORK / SERVICES -->
+    <section class="work section" id="work">
+      <span class="section-label" data-reveal>WORK</span>
+      <h2 class="section-title" data-reveal>What I <em class="serif">do</em></h2>
+      <div class="work-list">
+        <article class="work-row" data-reveal>
+          <span class="work-num">01</span>
+          <h3>Web Development</h3>
+          <p>Premium, responsive websites with smooth motion and clean architecture.</p>
+          <span class="work-tags">React &middot; CSS &middot; Motion</span>
+          <span class="work-arrow">&rarr;</span>
+        </article>
+        <article class="work-row" data-reveal>
+          <span class="work-num">02</span>
+          <h3>Video Editing</h3>
+          <p>Cinematic edits with rhythm, pacing, and color grading that tells a story.</p>
+          <span class="work-tags">Premiere &middot; After Effects</span>
+          <span class="work-arrow">&rarr;</span>
+        </article>
+        <article class="work-row" data-reveal>
+          <span class="work-num">03</span>
+          <h3>Motion Design</h3>
+          <p>Interface motion, micro-interactions, and scroll-driven visual journeys.</p>
+          <span class="work-tags">GSAP &middot; Framer &middot; CSS</span>
+          <span class="work-arrow">&rarr;</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE -->
+    <section class="projects section" id="projects">
+      <span class="section-label" data-reveal>SELECTED WORK</span>
+      <h2 class="section-title" data-reveal>Featured <em class="serif">projects</em></h2>
+      <div class="projects-grid">
+        <article class="project-card" data-reveal>
+          <div class="project-visual p1">
+            <div class="project-overlay"><span>View &rarr;</span></div>
+          </div>
+          <div class="project-info">
+            <h3>Aurora Studio</h3>
+            <span class="project-cat">Web &middot; Motion</span>
+          </div>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-visual p2">
+            <div class="project-overlay"><span>View &rarr;</span></div>
+          </div>
+          <div class="project-info">
+            <h3>Editor's Cut</h3>
+            <span class="project-cat">Video &middot; Color</span>
+          </div>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-visual p3">
+            <div class="project-overlay"><span>View &rarr;</span></div>
+          </div>
+          <div class="project-info">
+            <h3>Motion Lab</h3>
+            <span class="project-cat">Motion &middot; UI</span>
+          </div>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-visual p4">
+            <div class="project-overlay"><span>View &rarr;</span></div>
+          </div>
+          <div class="project-info">
+            <h3>Frame Works</h3>
+            <span class="project-cat">Edit &middot; Story</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social section" id="social">
+      <span class="section-label" data-reveal>SOCIAL</span>
+      <h2 class="section-title" data-reveal>Connect with <em class="serif">me</em></h2>
+      <div class="social-card" data-reveal>
+        <span class="coming-badge">SOCIAL LINKS COMING SOON</span>
+        <p>Follow channels will be available shortly.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <span class="section-label" data-reveal>CONTACT</span>
+      <h2 class="contact-title" data-reveal>Let's build something <em class="serif">premium.</em></h2>
+      <p class="contact-text" data-reveal>Available for freelance projects and collaborations.</p>
+      <a href="mailto:hello@masumdev.com" class="btn btn-primary btn-lg magnetic"><span>Start a Project</span><span class="arrow">&rarr;</span></a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">MASUM DEV &copy; 2026</span>
+      <span class="footer-sub" id="clock">--:--:--</span>
+      <button class="back-top" id="backTop" aria-label="Back to top"><span>&uarr;</span></button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
